@@ -18,4 +18,8 @@ class Visitor
   def tall_enough?(height)
     @height >= 54
   end
+
+  def reduce_spending_money(visitor)
+    visitor.spending_money = (visitor.spending_money - @admission_fee)
+  end
 end
